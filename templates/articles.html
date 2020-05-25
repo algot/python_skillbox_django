@@ -1,0 +1,19 @@
+{%extends "base.html" %}
+{% block title %}My blog - articles{% endblock %}
+
+
+{% block content %}
+    <h2>List of articles</h2>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Date</td>
+        </tr>
+        {% for article in articles %}
+        <tr>
+            <td><a href="/articles/{{ article.id }}">{{ article.name }}</a></td>
+            <td>{{ article.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
