@@ -21,6 +21,6 @@ urlpatterns = [
     path('contacts/', views.contacts),
     path('status/', views.status),
     path('publish/', views.publish),
-    path('articles', views.articles),
+    path('articles/', views.articles),
     path('articles/<int:number>', views.article),
 ]
